@@ -1,0 +1,35 @@
+.footer {
+    display: flex;
+    flex-shrink: 0;
+    background-color: $color-7;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+    }
+
+    &--item {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 100;
+    }
+}
+
+
+
+@media screen and (max-width: 800px){
+
+    .footer__content {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1440px){
+
+    .footer__content  {
+        width: 70%;
+    }
+}

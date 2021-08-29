@@ -1,0 +1,36 @@
+.nav {
+    background-color: $color-7;
+
+    &__logo {
+        color: $color-8 !important;
+    }
+    &__item--active {
+        color: $color-6 !important;
+    }
+    &__item--inactive {
+        color: $color-5 !important;
+    }
+} 
+
+
+@media screen and (max-width: 990px){
+    .navbar-toggler  {
+        color: rgba(0,0,0,0) !important;
+    }
+    .navbar-toggler:focus .navbar-toggler-icon{
+        background-image: none;
+    }
+
+    .navbar {
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    }
+
+    .collapse {
+        height: 140px;
+        transition: all .5s ease-out;
+    }
+}
+

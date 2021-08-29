@@ -1,0 +1,35 @@
+.wrapper {
+    flex: 1 0 auto;
+}
+
+.card {
+    height: 264px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: $color-7;
+    
+    &--white {
+        border: 3px solid $color-6;
+        background-color: $color-1;
+        @extend .card;
+}
+
+    &--pink {
+        border: 3px solid $color-1;
+        background-color: $color-6;
+        @extend .card;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+
+    .main-header {
+        margin-top: 8rem;
+    }
+
+    .row:last-child{
+        margin-bottom: 10rem;
+    }
+}
